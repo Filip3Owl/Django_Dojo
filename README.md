@@ -47,5 +47,4 @@ python manage.py runserver
 
 ## License
 
-This project is for educational purposes.
-```
+MIT License
