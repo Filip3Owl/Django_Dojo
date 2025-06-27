@@ -12,7 +12,7 @@ This is a project developed using the Django framework.
 
 - Python 3.x
 - Django (latest stable version)
-- Virtual environment (recommended)
+- Virtual environment
 
 ## License
 
