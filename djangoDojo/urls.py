@@ -17,19 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.http import HttpResponse
-
-def myView(request):
-    return HttpResponse("Hello, this is my first view in Django!")
-
-def contact(request):
-    return HttpResponse("Hello, this is the contact page!")
-
-def about(request):
-    return HttpResponse("Hello, this is the about page!")
+from recipes.views import home, contact, about
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', myView),
+    path('', home),
     path('about/', about),
     path('contact/', contact)
 ]
