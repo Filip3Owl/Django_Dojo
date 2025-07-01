@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'home.html', context={
+        'nome':'filipe'
+    })
 
 def contact(request):
     return HttpResponse("Hello, this is the contact page! You imported it from recipes/views.py")
